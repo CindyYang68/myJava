@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>向日葵服飾中心</title>
+</head>
+
+<body>
+  <div class="promo">
+    <span>歡迎光臨向日葵服飾中心</span>
+  </div>
+  <!-- HEADER -->
+  <header class="header">
+    <!-- NAVIGATION -->
+   <div th:insert="jsp/base/base_nav::mybase_nav"></div>
+
+    <!-- Hero -->
+    <div th:replace="jsp/base/ad::myad"></div>
+    
+  </header>
+
+
+  <!-- New Arrivals -->
+  <section class="section">
+    <div th:replace="jsp/component/arrivals::myarrivals_title"></div>
+    <div th:replace="jsp/component/arrivals::myarrivals_content"></div> 
+  </section> 
+
+  <!-- Shop By Category -->
+  <section class="section">
+   <div th:replace="jsp/component/category::mysection_title"></div>
+   <div th:replace="jsp/component/category::mysection_content"></div>
+  </section>
+
+  <!-- Popular Products -->
+  <section class="section">
+    <div th:replace="jsp/component/popular::mypopular_title"></div>
+   <div th:replace="jsp/component/popular::mypopular_content"></div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+   <div th:replace="jsp/base/footer::myfooter"></div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/index.js"></script>
+  
+</body>
+
+</html>

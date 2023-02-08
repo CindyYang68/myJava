@@ -1,0 +1,14 @@
+<div class="title" th:fragment="myarrivals_title">
+      <h1><span>新品上市</span></h1>
+    </div>
+    <div class="product-center container" th:fragment="myarrivals_content">
+      <div class="product"  th:each="product:${productPage}">
+        <div class="img-cover">
+          <img th:src="'images/'+${product.image}" />
+        </div>
+        <p  th:text="${product.name}"></p>
+        
+        <div class="price"  th:text="'$ '+${product.price}"></div>
+        <div class="rating"  th:text="${product.describe}"></div>
+      </div>
+    </div>

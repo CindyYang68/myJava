@@ -1,0 +1,49 @@
+ <!-- nav -->
+ <nav class="nav container" th:fragment="mybase_nav">
+      <div class="navigation d-flex">
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="logo">
+        <img src="images/logo.png" width="10%">
+          <h2 style="display: inline;">向日葵服飾中心</h2>
+        </div>
+
+        <div class="menu">
+          <div class="top">
+            <span class="close">close <i class="bx bx-x"></i></span>
+          </div>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a th:href="@{/showAllProductPage}" class="nav-link">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">熱門商品</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">女性衣著</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">男性衣著</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a th:href="@{/login}" class="nav-link">登入</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons d-flex">
+          <div><i class="bx bx-search"></i></div>
+          <div><i class="bx bx-user"></i></div>
+          <div><i class="bx bx-heart"></i></div>
+          <div>
+            <i class="bx bx-shopping-bag"></i>
+            <span class="align-center">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
